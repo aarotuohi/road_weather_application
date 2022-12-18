@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="currentRoadPane" maxHeight="246.0" maxWidth="451.0" minHeight="246.0" minWidth="451.0" prefHeight="246.0" prefWidth="451.0" styleClass="infoPane" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="198.0" prefHeight="40.0" prefWidth="59.0" text="Wind" textAlignment="CENTER" AnchorPane.bottomAnchor="210.0" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="198.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="30.0" text="m/s" />
+   </children>
+</AnchorPane>

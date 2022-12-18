@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="TrafficMessagesPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="246.0" minWidth="451.0" prefHeight="246.0" prefWidth="451.0" styleClass="infoPane" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="13.0" layoutY="1.0" prefHeight="36.0" prefWidth="365.0" text="Recent traffic messages" AnchorPane.bottomAnchor="208.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="1.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

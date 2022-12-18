@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="currentRoadPane" maxHeight="246.0" maxWidth="-Infinity" minHeight="246.0" minWidth="451.0" prefHeight="246.0" prefWidth="451.0" styleClass="infoPane" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="11.0" prefHeight="31.0" prefWidth="451.0" text="Current" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="windSpeedLabel" alignment="CENTER" layoutX="56.0" layoutY="134.0" prefHeight="31.0" prefWidth="193.0" text="Wind speed: 3.0 m/s" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="windDirectionLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="165.0" text="Wind direction : NE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="OverallConditionLabel" alignment="CENTER" layoutX="54.0" layoutY="196.0" text="Overall condition: Normal" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="iconAnchorPane" layoutX="74.0" layoutY="42.0" prefHeight="86.0" prefWidth="306.0" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="74.0">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="83.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0">
+               <image>
+                  <Image url="@../com/thebigfour/drivingconditions/Thermometer.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="tempLabel" layoutX="74.0" layoutY="32.0" prefHeight="30.0" prefWidth="68.0" text="22 °C" AnchorPane.leftAnchor="74.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="151.60000000000002" layoutY="13.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="92.39999999999998">
+               <image>
+                  <Image url="@../com/thebigfour/drivingconditions/Road.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="roadTempLabel" layoutX="229.0" layoutY="32.0" prefHeight="30.0" prefWidth="76.0" text="22 °C" AnchorPane.rightAnchor="-1.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

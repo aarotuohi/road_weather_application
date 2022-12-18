@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thebigfour.drivingconditions.View">
+   <children>
+      <GridPane fx:id="mainGridPane" hgap="2.0" layoutX="34.0" layoutY="59.0" maxHeight="505.0" maxWidth="916.0" minHeight="505.0" minWidth="916.0" prefHeight="505.0" prefWidth="916.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="65.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <AnchorPane layoutX="200.0" layoutY="76.0" maxHeight="40.0" prefHeight="40.0" prefWidth="200.0" styleClass="topBar" stylesheets="@../css/application.css" AnchorPane.bottomAnchor="560.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="menuButton" layoutX="5.0" layoutY="5.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="menuButton" stylesheets="@../css/application.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="958.0" AnchorPane.topAnchor="5.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/thebigfour/drivingconditions/menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="topCityLabel" alignment="CENTER" layoutX="453.0" layoutY="2.0" text="Tampere" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="parameterMenuButton1" layoutX="954.0" layoutY="5.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: Transparent;" styleClass="menuButton" stylesheets="@../css/application.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="954.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="5.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/thebigfour/drivingconditions/SliderHamburger.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="menuPane" layoutX="30.0" layoutY="-52.0" prefHeight="600.0" prefWidth="200.0" styleClass="searchMenu" stylesheets="@../css/application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Label layoutX="22.0" layoutY="2.0" text="Search" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="34.0" text="By City:" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="95.0" text="By Coordinates:" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField layoutX="14.0" layoutY="129.0" prefHeight="26.0" prefWidth="69.0" promptText="from" fx:id="xMin" />
+            <TextField layoutX="97.0" layoutY="129.0" prefHeight="26.0" prefWidth="69.0" promptText="to" fx:id="xMax" />
+            <CheckBox fx:id="digitrafficCheckBox" layoutX="17.0" layoutY="214.0" mnemonicParsing="false" text="Road" textFill="WHITE" />
+            <CheckBox fx:id="FMICheckBox" layoutX="82.0" layoutY="214.0" mnemonicParsing="false" text="Weather" textFill="WHITE" />
+            <Label layoutX="17.0" layoutY="239.0" text="From:" textFill="WHITE" />
+            <DatePicker fx:id="fromDatePicker" layoutX="14.0" layoutY="260.0" maxHeight="26.0" maxWidth="101.0" minHeight="26.0" minWidth="101.0" prefHeight="26.0" prefWidth="101.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="85.0" />
+            <Label layoutX="15.0" layoutY="294.0" text="To:" textFill="WHITE" />
+            <DatePicker fx:id="toDatePicker" layoutX="14.0" layoutY="312.0" maxHeight="26.0" maxWidth="101.0" minHeight="26.0" minWidth="101.0" prefHeight="26.0" prefWidth="101.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="85.0" />
+            <Button fx:id="savepreset" contentDisplay="TEXT_ONLY" graphicTextGap="2.0" layoutX="3.0" layoutY="391.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" styleClass="savePresetButton" stylesheets="@../css/application.css" text="Save preset" textFill="#d3cccc" AnchorPane.bottomAnchor="183.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="108.0" AnchorPane.topAnchor="391.0" />
+            <ComboBox fx:id="cityComboBox" layoutX="20.0" layoutY="61.0" prefWidth="150.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+            <TextField fx:id="fromTime" layoutX="126.0" layoutY="260.0" prefHeight="26.0" prefWidth="69.0" />
+            <TextField fx:id="toTime" layoutX="126.0" layoutY="313.0" prefHeight="26.0" prefWidth="69.0" />
+            <Button fx:id="menuBackButton" layoutX="120.0" layoutY="20.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: Transparent;" styleClass="menuButton" stylesheets="@../css/application.css" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="menuButton">
+                     <image>
+                        <Image url="@../com/thebigfour/drivingconditions/menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="124.0" layoutY="239.0" text="Time" textFill="WHITE" />
+            <Label layoutX="124.0" layoutY="292.0" text="Time" textFill="WHITE" />
+            <Label layoutX="16.0" layoutY="189.0" text="Data:" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="searchErrorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="516.0" prefHeight="40.0" prefWidth="150.0" text="Error!" textAlignment="CENTER" textFill="#da0b0b" visible="false" wrapText="true" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="29.0" />
+            <TextField fx:id="yMin" layoutX="14.0" layoutY="161.0" prefHeight="26.0" prefWidth="69.0" promptText="from" />
+            <TextField fx:id="yMax" layoutX="97.0" layoutY="161.0" prefHeight="26.0" prefWidth="69.0" promptText="to" />
+            <Text fill="WHITE" layoutX="87.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
+            <Text fill="WHITE" layoutX="87.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
+            <Text fill="WHITE" layoutX="169.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="°N" />
+            <Text fill="WHITE" layoutX="170.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="°E" />
+            <ComboBox fx:id="presetComboBox" layoutX="16.0" layoutY="364.0" prefWidth="150.0" />
+            <Label layoutX="15.0" layoutY="343.0" text="Presets:" textFill="WHITE" />
+            <Button fx:id="searchButton" layoutX="154.0" layoutY="567.0" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" onAction="#searchButtonPressed" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="16.0">
+               <graphic>
+                  <ImageView id="#searchButton" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/thebigfour/drivingconditions/Search.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="deleteButton" contentDisplay="TEXT_ONLY" graphicTextGap="2.0" layoutX="96.0" layoutY="389.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" styleClass="savePresetButton" stylesheets="@../css/application.css" text="Delete preset" textFill="#d3cccc" />
+            <Label layoutX="6.0" layoutY="417.0" text="Saved datasets" textFill="WHITE" />
+            <ComboBox fx:id="savedDatasetsComboBox" layoutX="4.0" layoutY="436.0" prefHeight="25.0" prefWidth="190.0" />
+            <Button fx:id="saveDatasetButton" graphicTextGap="0.0" layoutX="2.0" layoutY="463.0" mnemonicParsing="false" onAction="#saveRecentDataset" prefHeight="30.0" prefWidth="89.0" styleClass="savePresetButton" stylesheets="@../css/application.css" text="Save dataset" textFill="#d3cccc" />
+            <Button fx:id="deleteDatasetButton" graphicTextGap="0.0" layoutX="100.0" layoutY="463.0" mnemonicParsing="false" onAction="#deleteDataset" prefHeight="30.0" prefWidth="94.0" styleClass="savePresetButton" stylesheets="@../css/application.css" text="Delete dataset" textFill="#d3cccc" />
+            <Button fx:id="visualizeDatasetButton" contentDisplay="TEXT_ONLY" graphicTextGap="2.0" layoutX="-1.0" layoutY="490.0" mnemonicParsing="false" onAction="#visualizeDatasetButtonPressed" prefHeight="26.0" prefWidth="109.0" styleClass="savePresetButton" stylesheets="@../css/application.css" text="Visualize dataset" textFill="#d3cccc" />
+            <Button fx:id="compareDatasetsButton" contentDisplay="TEXT_ONLY" graphicTextGap="2.0" layoutX="20.0" layoutY="564.0" mnemonicParsing="false" onAction="#compareSavedDataset" prefHeight="26.0" prefWidth="120.0" styleClass="savePresetButton" stylesheets="@../css/application.css" text="Compare datasets" textFill="#d3cccc" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="parameterMenu" layoutX="533.0" prefHeight="600.0" prefWidth="259.0" styleClass="parameterMenu" stylesheets="@../css/application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="parameterMenuButton2" layoutX="14.0" layoutY="14.0" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: Transparent;" styleClass="menuButton" stylesheets="@../css/application.css" AnchorPane.bottomAnchor="565.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="menuButton">
+                     <image>
+                        <Image url="@../com/thebigfour/drivingconditions/SliderHamburger.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <CheckBox fx:id="currentRoadCheckBox" layoutX="30.0" layoutY="74.0" mnemonicParsing="false" onAction="#RoadParametersChanged" text="Current road" textFill="WHITE" />
+            <CheckBox fx:id="maintenanceTaskCheckBox" layoutX="30.0" layoutY="99.0" mnemonicParsing="false" onAction="#RoadParametersChanged" text="Maintenance tasks" textFill="WHITE" />
+            <CheckBox fx:id="RoadForecastCheckBox" layoutX="30.0" layoutY="122.0" mnemonicParsing="false" onAction="#RoadParametersChanged" text="Road forecast" textFill="WHITE" />
+            <CheckBox fx:id="TrafficCheckBox" layoutX="30.0" layoutY="145.0" mnemonicParsing="false" onAction="#RoadParametersChanged" text="Traffic messages" textFill="WHITE" />
+            <Button fx:id="chooseTasksButton" contentDisplay="RIGHT" layoutX="4.0" layoutY="194.0" mnemonicParsing="false" onAction="#showTaskListView" prefHeight="30.0" prefWidth="120.0" text="Choose tasks">
+               <graphic>
+                  <ImageView fx:id="expandArrow" fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/thebigfour/drivingconditions/expand-arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="taskConfirmButton" graphicTextGap="6.0" layoutX="126.0" layoutY="194.0" mnemonicParsing="false" onAction="#confirmFilteredTypes" prefHeight="30.0" prefWidth="59.0" text="Confirm" visible="false" />
+            <ListView fx:id="taskListView" layoutX="4.0" layoutY="225.0" prefHeight="200.0" prefWidth="250.0" visible="false" />
+            <Button fx:id="showAllButton" layoutX="4.0" layoutY="167.0" mnemonicParsing="false" onAction="#showAllTasks" text="Show all" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="maintenancePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="246.0" minWidth="451.0" prefHeight="246.0" prefWidth="451.0" style="-fx-background-color: white;" styleClass="infoPane" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="9.0" layoutY="17.0" prefHeight="35.0" prefWidth="442.0" text="Maintenance" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="1.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
