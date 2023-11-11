@@ -11,7 +11,7 @@ import javafx.util.Pair;
 
 /**
  *
- * @author Mikko
+ * @author Aaro
  */
 public class WeatherMaintenanceChart extends TaskChart {
     
