@@ -17,10 +17,7 @@ import java.util.TreeMap;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-/**
- *
- * @author Mikko
- */
+
 public class JSONManager {
     
     public JSONManager(){
