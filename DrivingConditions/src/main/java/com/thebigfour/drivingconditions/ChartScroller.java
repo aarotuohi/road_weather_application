@@ -21,12 +21,7 @@ import javafx.scene.layout.Region;
 import javafx.scene.text.Font;
 
 
-/**
- *
- * @author Mikko
- * 
- * A class for scrolling through charts
- */
+
 public class ChartScroller extends AnchorPane {
     
     private ArrayList<Region> dayChartList;
