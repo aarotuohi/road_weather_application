@@ -3,7 +3,10 @@ package com.thebigfour.drivingconditions;
 
 import org.json.JSONObject;
 
-
+/**
+ *
+ * @author Aaro
+ */
 public class RoadCondition {
     private String time;
     private String type;
