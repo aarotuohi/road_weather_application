@@ -13,7 +13,7 @@ import javafx.util.Pair;
 
 /**
  *
- * @author Mikko
+ * @author Aaro
  */
 public class TaskChart extends AnchorPane {
 
