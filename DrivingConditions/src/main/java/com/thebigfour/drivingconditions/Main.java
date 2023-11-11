@@ -4,10 +4,7 @@
  */
 package com.thebigfour.drivingconditions;
 
-/**
- *
- * @author mikko
- */
+
 
 
 import javafx.application.Application;
