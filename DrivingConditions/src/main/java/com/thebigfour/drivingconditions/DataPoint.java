@@ -6,10 +6,7 @@ package com.thebigfour.drivingconditions;
 
 import java.time.LocalTime;
 
-/**
- * @brief an abstract class for weather data points
- * @author mikko
- */
+
 abstract public class DataPoint {
     
     abstract public LocalTime getTime();
