@@ -6,7 +6,7 @@ package com.thebigfour.drivingconditions;
 
 /**
  *
- * @author mikko
+ * @author Aaro
  */
 import java.io.File;
 import java.io.FileNotFoundException;
