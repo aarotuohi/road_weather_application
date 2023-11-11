@@ -5,7 +5,7 @@ import java.time.LocalTime;
 
 /**
  *
- * @author miika.hamalainen@tuni.fi
+ * @author Aaro
  */
 public class WeatherSettings {
 
